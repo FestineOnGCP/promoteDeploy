@@ -33,7 +33,7 @@ jobs:
             - textfile.txt
 
   promote_to_production:
-    executor: my-exec-env
+    executor: my_exec_env
     steps:
       - checkout
       - run: |
