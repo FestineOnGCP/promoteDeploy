@@ -42,7 +42,7 @@ jobs:
           --parameter-overrides PipelineID=ammed-985729960198-${CIRCLE_WORKFLOW_ID:0:7}
 
   clean_up_old_front_end:
-    executor: my-exec-env
+    executor: my_exec_env
     steps:
       - checkout
       - run: yum install tar gzip -y
